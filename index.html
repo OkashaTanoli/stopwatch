@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="shortout icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="stopWatch">
+        <!-- <div class="overlay"> -->
+            <div class="circle">
+                <div class="numbers" id="inner">
+                    <div id="cover">
+                        <div class="margin" id="min">0</div>
+                        <div class="margin" id="black">:</div>
+                        <div class="margin" id="sec">0</div>
+                        <div class="margin" id="black">:</div>
+                        <div class="margin" id="milisec">0</div>
+                    </div>
+
+                </div>
+                <div class="letters">
+                    <div class="marginRight">Min</div>
+                    <div class="fontSize"> Sec</div>
+                    <div class="marginLeft">M.Sec</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="gradient"><button onclick="start()" id="disable">Start</button></div>
+                <div class="gradient"><button onclick="stopNow()">Pause</button></div>
+                <div class="gradient"><button onclick="reset()">Reset</button></div>
+            </div>
+            <div class="scroll">
+                <div id="save">
+                    <p>write your Name to save your record </p>
+                    <input type="text" name="record" id="name" placeholder="Enter your name">
+                    <button id="saveBtn" onclick="record()">Save</button>
+                </div>
+                <div class="heading">
+                    <div class="nameHead">Name</div>
+                    <div class="recordHead">Record</div>
+                </div>
+                <div id="record">
+                    <div id="userName"></div>
+                    <div id="timeUsed"></div>
+                </div><hr>
+                <div id="clrAll">
+                    <button onclick="clrAll()">Clear All</button>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+    <!-- </div> -->
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

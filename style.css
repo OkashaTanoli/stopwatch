@@ -1,0 +1,317 @@
+@font-face{
+    font-family: okasha;
+    src: url("fonts/UbuntuCondensed-Regular.ttf");
+}
+@font-face{
+    src: url("fonts/Roboto-LightItalic.ttf");
+    font-family: tanoli;
+}
+
+.circle{
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.205),black);
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    box-shadow:  inset 0 0 20px rgb(3, 3, 3);
+    border: 10px solid rgb(15, 6, 0);
+    /* display: flex;
+    justify-content:space-around;
+    align-items: center; */
+    margin: 0 auto;
+    /* z-index: 1; */
+}
+#cover{
+    display: flex;
+    justify-content: center;
+}
+.numbers{
+    margin-top: 120px;
+}
+.fontSize,.marginRight,.marginLeft{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fontSize{
+    margin-left: 90px;
+    margin-right: 80px;
+}
+/* .marginLeft{
+    margin-left: px;
+} */
+.letters{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.stopWatch{
+    margin: 0 auto;
+    width: 400px;
+    height: 730px;
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.scroll{
+    margin-top: 30px;
+    height: 218px;
+    overflow: scroll;
+    background-color: rgba(245, 241, 241, 0.425);
+    z-index: -1;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 4px solid black;
+    box-shadow: inset 0 0 20px black;
+
+}
+.scroll::-webkit-scrollbar{
+    width: 10px;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: rgb(123, 124, 124);
+    border-radius: 10px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(rgb(255, 74, 2),rgb(255, 81, 0),yellow);
+    border-radius: 10px;
+}
+.scroll::-webkit-scrollbar-corner{
+    background-color:transparent;
+}
+/* .overlay{
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+} */
+.margin{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 70px;
+    width: 19%;
+    text-align: center;
+}
+#black{
+    color: black !important;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.gradient button{
+    background-color: transparent;
+    padding: 13px;
+    border: 4px solid rgb(197, 86, 6);
+    font-size: 30px;
+    font-weight: 800;
+    transition: .5s;
+    color: rgb(10, 4, 0);
+}
+.gradient button:hover{
+    background-color: rgb(197, 86, 6);
+    color: wheat;
+}
+.gradient button:focus{
+    outline: none;
+}
+#save{
+    width: 100%;
+}
+#save p{
+    margin-top: 0px !important;
+    font-size: 28px;
+    font-weight: bold !important;
+    font-family: okasha;
+    text-align: center;
+    color: rgb(53, 26, 1);
+    letter-spacing: -0.5px;
+}
+#name{
+    background-color: transparent;
+    width: 65%;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 4px solid orangered;
+    font-size: 30px;
+    color: rgb(75, 74, 74);
+    font-weight: 700;
+}
+#name:focus{
+    outline: none;
+    border: none;
+    border-bottom:4px solid orangered ;
+}
+#saveBtn{
+    font-size: 30px;
+    font-weight: 800;
+    background-color: transparent;
+    border: 4px solid rgb(197, 86, 6);
+    transition: .5s;
+}
+#saveBtn:hover{
+    color: wheat;
+    background-color: rgb(197, 86, 6);
+
+}
+#saveBtn:focus{
+    outline: none;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.nameHead{
+    width:70% ;
+    font-size: 30px;
+    font-family: okasha;
+    font-weight: bold;
+
+}
+.recordHead{
+    width: 30%;
+    font-size: 30px;
+    font-family: okasha;
+    font-weight: bold;
+
+}
+#record{
+    display: flex;
+    color: rgb(22, 22, 22);
+    margin-top: 20px;
+    font-weight: 800;
+}
+#timeUsed{
+    width: 40%;
+    font-family: tanoli;
+}
+#timeUsed div{
+    margin-bottom: -9.5px;
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+    
+}
+#record #timeUsed div div{
+    font-size: 30px;
+    color: rgb(22, 22, 22);
+    text-align: center;
+}
+#userName{
+    padding-left: 5px;
+    font-size: 30px;
+    width: 60%;
+    font-family: tanoli;
+
+}
+#clrAll button{
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 4px solid rgb(197, 86, 6) ;
+    transition: .5s;
+    margin-left: 5px;
+}
+#clrAll button:hover{
+    background-color:rgb(197, 86, 6) ;
+    color: wheat;
+}
+#clrAll button:focus{
+    outline: none;
+}
+
+
+
+
+
+@media (max-width:370px){
+    .stopWatch{
+        width: 100%;
+        height: 665px;
+        margin: 0px;
+    }
+    .circle{
+        width: 310px;
+        height: 310px;
+    }
+    .margin{
+        font-size: 60px;
+    }
+    .fontSize,.marginRight,.marginLeft{
+        font-size: 25px;
+    }
+    .fontSize{
+        margin-left: 70px;
+        margin-right:60px ;
+    }
+    .numbers{
+        margin-top: 100px;
+    }
+    .gradient button{
+        padding: 10px;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    #save p{
+        font-size: 25px;
+        font-family: okasha;
+        letter-spacing: -0.3px;
+    }
+    #name{
+        width: 60%;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    #saveBtn{
+        font-size: 25px;
+        font-weight: 800;
+        transition: .5s;
+    }
+}
+
+@media (max-width:350px){
+    .stopWatch{
+        height: 625px;
+        margin: 0px;
+
+    }
+    .circle{
+        width: 280px;
+        height: 280px;
+    }
+    .fontSize,.marginRight,.marginLeft{
+        font-size: 25px;
+    }
+    .fontSize{
+        margin-left: 60px;
+        margin-right:50px ;
+    }
+    .numbers{
+        margin-top: 90px;
+    }
+    .margin{
+        font-size: 55px;
+    }
+    .gradient button{
+        padding: 8px;
+        font-size: 23px;
+        font-weight: 800;
+    }
+    #name{
+        width: 60%;
+        margin-right: 15px;
+        font-size: 22px;
+    }
+    #clrAll button{
+        font-size: 22px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}
+
+
